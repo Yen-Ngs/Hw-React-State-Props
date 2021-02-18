@@ -59,7 +59,7 @@ export default class ChangingGlasses extends Component {
                     backgroundImage: `url("./glassesImage/background.jpg")`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
-                    height: 800,
+                    height: 600,
                 }}>
                     <h3 className="text-white py-2 text-center"
                         style={{ backgroundColor: "black", opacity: 0.5 }}>
@@ -71,25 +71,27 @@ export default class ChangingGlasses extends Component {
                             backgroundImage: `url("./glassesImage/model.jpg")`,
                             backgroundSize: "cover",
                             backgroundPosition: "center",
-                            width: "100%",
-                            height: "585px",
+                            width: "60%",
+                            height: "300px",
                             position: "relative",
                         }}
                     ></div>
-                    <div className="row mt-5">
+                    <div className="row mt-3">
                         <div className="col-4">
-                            <h3 className="text-center">{this.state.itemDetail.tenSP}</h3>
+                            <h3 className="text-center">{this.state.itemDetail.name}</h3>
                             <img src={this.state.itemDetail.url}
                                 style={{
                                     position: "absolute",
                                     backgroundSize: "cover",
                                     opacity: 0.7,
-                                    top: "-200%",
-                                    left: "98%",
-                                    zIndex: 99
+                                    top: "-110%",
+                                    left: "110%",
+                                    zIndex: 99,
+                                    width: "80%",
                                 }} alt="abc" />
                         </div>
-                        <div className="col-8">
+                        <div className="col-8"  
+                        >
                             <h3>Details</h3>
                             <table class="table">
                                 <tbody>
@@ -116,7 +118,7 @@ export default class ChangingGlasses extends Component {
 
 
                     <div className="row">
-                        {this.renderItem()}
+                    {this.renderItem()}
                     </div>
 
 
